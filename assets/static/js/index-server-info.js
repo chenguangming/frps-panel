@@ -13,7 +13,7 @@ var loadServerInfo = (function ($) {
         $('#content').empty();
         var loading = layui.layer.load();
 
-        $.getJSON('/proxy/api/serverinfo').done(function (result) {
+        $.getJSON('proxy/api/serverinfo').done(function (result) {
             if (result.success) {
                 var data = JSON.parse(result.data);
                 data.proxyCounts = 0;

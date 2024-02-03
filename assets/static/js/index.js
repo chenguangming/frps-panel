@@ -3,7 +3,7 @@ var httpPort, httpsPort, pageOptions;
     $(function () {
         function init() {
             var langLoading = layui.layer.load()
-            $.getJSON('/lang.json').done(function (lang) {
+            $.getJSON('lang.json').done(function (lang) {
                 pageOptions = {
                     limitTemplet: function (item) {
                         return item + lang['PerPage'];
